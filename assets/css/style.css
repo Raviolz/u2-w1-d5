@@ -47,7 +47,7 @@ nav button {
   width: 7em;
 }
 
-section {
+.hero {
   height: 80%;
   border: 1px solid black;
   display: flex;
@@ -80,4 +80,24 @@ section {
   flex-direction: column;
   margin-left: 10em;
   margin-top: 5.5em;
+}
+
+.trends {
+  display: flex;
+  border: 1px solid black;
+  height: 25em;
+  flex-wrap: wrap;
+
+  padding: 5em 15em;
+}
+
+.trends article {
+  border: 1px solid black;
+  width: 30em;
+  display: flex;
+  flex-grow: 1;
+}
+
+.trends h4 {
+  position: absolute;
 }
