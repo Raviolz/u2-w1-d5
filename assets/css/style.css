@@ -217,3 +217,37 @@ nav button {
 .categories {
   width: 35%;
 }
+
+.categories {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2em;
+  /* position: sticky; 
+  top: 0; /* Si attacca in cima alla finestra */
+  /* height: 100vh; Rende la barra alta quanto la viewport (necessario per sticky) GUARDO BENE DOMANI  */
+  align-items: flex-start;
+}
+
+.categories h5 {
+  font-weight: bold;
+  margin-bottom: 1em;
+  font-size: 0.9em;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-bottom: 2em;
+}
+
+.tag {
+  padding: 0.5em 1em;
+
+  border-radius: 3px;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #5c5c5c;
+  border: 1px solid #f1f2f2;
+}
