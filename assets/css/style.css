@@ -93,11 +93,53 @@ nav button {
 
 .trends article {
   border: 1px solid black;
-  width: 30em;
+  width: 24em;
   display: flex;
   flex-grow: 1;
+  margin-top: 2em;
+  padding-top: 2em;
 }
 
 .trends h4 {
   position: absolute;
+  font-weight: bold;
+}
+
+.number {
+  font-size: 2.2em;
+  width: 2.5em;
+  color: #e6e7e7;
+  font-weight: bold;
+}
+
+.trends section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1em;
+
+  flex-grow: 1;
+  gap: 1em;
+}
+
+.trends h5 {
+  font-weight: bold;
+}
+
+.trends span {
+  font-size: 0.7em;
+}
+
+.trendsAuthor {
+  font-size: 0.6em;
+  font-weight: bold;
+}
+
+.trends img {
+  width: 2em;
+}
+
+.trendsAuthor {
+  display: flex;
+  align-items: center;
+  gap: 1em;
 }
