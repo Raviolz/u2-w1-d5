@@ -143,3 +143,77 @@ nav button {
   align-items: center;
   gap: 1em;
 }
+
+.bottom {
+  display: flex;
+
+  padding: 3em 10em;
+  gap: 3em;
+}
+
+.news {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+
+  gap: 2em;
+}
+
+.article-row {
+  display: flex;
+  flex-grow: 1;
+  gap: 3em;
+  padding: 0.5em 0;
+}
+
+.article-text {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 0.9em;
+}
+.author img {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+}
+
+.article-text h5 {
+  font-size: 1.3em;
+  font-weight: 900;
+  margin-bottom: 0.1em;
+}
+
+.article-text h6 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #757575;
+  line-height: 1.4;
+}
+
+.article-text span {
+  font-size: 0.8em;
+  color: #757575;
+}
+
+.article-image {
+  width: 35%;
+  height: 9em;
+}
+
+.article-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.categories {
+  width: 35%;
+}
