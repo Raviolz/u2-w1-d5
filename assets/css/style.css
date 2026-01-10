@@ -308,3 +308,60 @@ nav img {
   color: #757575;
   text-decoration: none;
 }
+
+@media screen and (max-width: 1200px) {
+  nav {
+    padding-left: 4em;
+    padding-right: 15em;
+  }
+
+  .hero {
+    width: 100%;
+    height: 28em;
+  }
+
+  .hero img {
+    width: 35%;
+    scale: 170%;
+    translate: 3em;
+  }
+
+  .hero div {
+    width: 65%;
+    margin-left: 4em;
+    margin-top: 4em;
+  }
+
+  .trends {
+    height: auto;
+    gap: 0em 8em;
+  }
+
+  .trendsin2 {
+    padding: 0em 0em 0em 6em;
+  }
+
+  .trends article {
+    width: 30%;
+  }
+
+  .bottom {
+    flex-direction: column;
+    width: 100%;
+    padding: 0em 0em;
+  }
+
+  .news {
+    order: 2;
+  }
+
+  .article-row {
+    width: 100%;
+  }
+
+  .categories {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 3em 4em 10em 4em;
+  }
+}
