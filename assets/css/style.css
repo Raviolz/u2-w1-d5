@@ -1,3 +1,14 @@
+html,
+body {
+  overflow-x: visible;
+  overflow-y: scroll;
+
+  position: static;
+
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -313,6 +324,9 @@ nav img {
   nav {
     padding-left: 4em;
     padding-right: 15em;
+    position: fixed;
+    top: 0;
+    z-index: 100;
   }
 
   .hero {
@@ -352,7 +366,10 @@ nav img {
   }
 
   .news {
+    box-sizing: border-box;
     order: 2;
+    width: 100%;
+    padding: 0 3em 0 3em;
   }
 
   .article-row {
@@ -363,5 +380,9 @@ nav img {
     box-sizing: border-box;
     width: 100%;
     padding: 3em 4em 10em 4em;
+    position: sticky;
+    bottom: 0;
+    top: unset;
+    z-index: 50;
   }
 }
