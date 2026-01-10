@@ -3,14 +3,13 @@ body {
 }
 
 header {
-  border: 1px solid black;
   background-color: #ffc017;
   height: 40em;
 }
 
 nav {
-  height: 20%;
-  border: 1px solid black;
+  height: 14%;
+  border-bottom: 1px solid black;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,14 +17,12 @@ nav {
 }
 
 nav ul {
-  border: 1px solid black;
   display: flex;
   align-items: center;
   gap: 2em;
 }
 
 nav ul li {
-  border: 1px solid black;
   list-style-type: none;
 }
 
@@ -43,13 +40,17 @@ nav button {
   background-color: black;
   color: white;
   border-radius: 1.3em;
-  height: 2.8em;
-  width: 7em;
+  height: 3em;
+  width: 8em;
+}
+
+nav img {
+  height: 2em;
 }
 
 .hero {
   height: 80%;
-  border: 1px solid black;
+
   display: flex;
   justify-content: space-between;
 }
@@ -84,30 +85,47 @@ nav button {
 
 .trends {
   display: flex;
-  border: 1px solid black;
+
   height: 25em;
   flex-wrap: wrap;
+}
 
-  padding: 5em 15em;
+.trendsin2 {
+  display: flex;
+  flex-direction: column;
+  padding: 3em 15em;
 }
 
 .trends article {
-  border: 1px solid black;
   width: 24em;
   display: flex;
   flex-grow: 1;
-  margin-top: 2em;
-  padding-top: 2em;
+  gap: 2em;
+  padding-top: 1.2em;
+  padding-right: 6em;
 }
 
-.trends h4 {
-  position: absolute;
+.trendsin2 h4 {
   font-weight: bold;
+  padding-top: 4em;
+}
+
+.trendsin2 h4 i {
+  display: inline-block;
+
+  width: 1.5em;
+  height: 1.5em;
+
+  text-align: center;
+  line-height: 1.5em;
+  margin-right: 2em;
+  border-radius: 50%;
+  border: 1px solid black;
 }
 
 .number {
   font-size: 2.2em;
-  width: 2.5em;
+
   color: #e6e7e7;
   font-weight: bold;
 }
@@ -115,8 +133,7 @@ nav button {
 .trends section {
   display: flex;
   flex-direction: column;
-  padding-top: 1em;
-
+  padding-top: 0.4em;
   flex-grow: 1;
   gap: 1em;
 }
@@ -127,6 +144,12 @@ nav button {
 
 .trends span {
   font-size: 0.7em;
+  display: flex;
+  align-items: center;
+}
+
+.trends span img {
+  margin-left: 0.6em;
 }
 
 .trendsAuthor {
@@ -136,6 +159,11 @@ nav button {
 
 .trends img {
   width: 2em;
+  border-radius: 0.5em;
+}
+
+.trends article:nth-of-type(1) img {
+  border-radius: 2em;
 }
 
 .trendsAuthor {
@@ -147,7 +175,7 @@ nav button {
 .bottom {
   display: flex;
 
-  padding: 3em 10em;
+  padding: 3em 14em;
   gap: 3em;
 }
 
@@ -216,10 +244,6 @@ nav button {
 
 .categories {
   width: 35%;
-}
-
-.categories {
-  width: 35%;
   display: flex;
   flex-direction: column;
   padding-left: 2em;
@@ -240,14 +264,29 @@ nav button {
   flex-wrap: wrap;
   gap: 0.5em;
   margin-bottom: 2em;
+  border-bottom: 1px solid #c4c4c4;
+  padding-bottom: 2em;
 }
 
 .tag {
   padding: 0.5em 1em;
 
   border-radius: 3px;
-  font-size: 0.8em;
+  font-size: 1em;
   text-decoration: none;
-  color: #5c5c5c;
-  border: 1px solid #f1f2f2;
+  color: #5c5c5ca8;
+  border: 1px solid #c4c4c4;
+}
+
+.pseudo-footer {
+  padding-right: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+
+.pseudo-footer a {
+  font-size: 1em;
+  color: #757575;
+  text-decoration: none;
 }
