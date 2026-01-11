@@ -2,7 +2,7 @@ const navBar = document.querySelector("nav");
 const navButton = document.querySelector("nav button");
 
 const tresholdDesktop = 400;
-const tresholdTablet = 400;
+const tresholdTablet = 400; //vabbeh alla fine uguale
 
 window.addEventListener("scroll", () => {
   const scrollPosition = window.scrollY;
@@ -22,4 +22,14 @@ window.addEventListener("scroll", () => {
   }
 });
 
-console.log("funziona");
+document.addEventListener("DOMContentLoaded", function () {
+  const bookmarkLinks = document.querySelectorAll(".bookmark-link");
+
+  bookmarkLinks.forEach((link) => {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+
+      this.classList.toggle("saved-icon");
+    });
+  });
+});
