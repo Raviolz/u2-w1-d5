@@ -24,7 +24,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding-left: 10em;
-  padding-right: 10em;
+  padding-right: 20em;
   position: fixed;
   top: 0px;
   background-color: #ffc017;
@@ -80,6 +80,7 @@ nav img {
   display: flex;
   justify-content: space-between;
   padding-bottom: 4em;
+  overflow: hidden;
 }
 
 .hero h3 {
@@ -110,6 +111,11 @@ nav img {
   margin-top: 5.5em;
 }
 
+.hero img {
+  translate: -200px;
+  scale: 140%;
+}
+
 .trends {
   display: flex;
 
@@ -135,19 +141,9 @@ nav img {
 .trendsin2 h4 {
   font-weight: bold;
   padding-top: 4em;
-}
-
-.trendsin2 h4 i {
-  display: inline-block;
-
-  width: 1.5em;
-  height: 1.5em;
-
-  text-align: center;
-  line-height: 1.5em;
-  margin-right: 2em;
-  border-radius: 50%;
-  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  gap: 1em;
 }
 
 .number {
@@ -227,8 +223,26 @@ nav img {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
+  align-items: flex-start;
 }
 
+.article-text span {
+  display: flex;
+  align-items: center;
+}
+
+.article-text img {
+  padding-left: 1em;
+}
+
+.article-text img:nth-of-type(2) {
+  align-self: flex-end;
+}
+
+.article-footer {
+  display: flex;
+  justify-content: space-between;
+}
 .author {
   display: flex;
   align-items: center;
@@ -239,6 +253,7 @@ nav img {
   width: 1.5em;
   height: 1.5em;
   border-radius: 50%;
+  padding-left: 0;
 }
 
 .article-text h5 {
@@ -268,6 +283,17 @@ nav img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.related {
+  text-decoration: none;
+  background-color: #f0f0f0;
+  color: #757575;
+  padding: 0.2em 0.6em;
+  border-radius: 1em;
+  font-weight: 500;
+
+  margin-left: 0.5em;
 }
 
 .categories {
