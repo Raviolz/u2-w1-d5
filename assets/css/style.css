@@ -24,7 +24,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding-left: 10em;
-  padding-right: 20em;
+  padding-right: 10em;
   position: fixed;
   top: 0px;
   background-color: #ffc017;
@@ -86,7 +86,7 @@ nav img {
 .hero h3 {
   font-family: "Spectral", serif;
   font-size: 7rem;
-  font-weight: 500;
+  font-weight: bold;
   margin-bottom: 0.3em;
 }
 
@@ -112,7 +112,7 @@ nav img {
 }
 
 .hero img {
-  translate: -200px;
+  translate: -100px;
   scale: 140%;
 }
 
@@ -242,6 +242,7 @@ nav img {
 .article-footer {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 .author {
   display: flex;
@@ -348,7 +349,7 @@ nav img {
 @media screen and (max-width: 1500px) {
   nav {
     padding-left: 5em;
-    padding-right: 5em;
+    padding-right: 10em;
   }
 
   .hero div {
@@ -373,7 +374,7 @@ nav img {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   body {
     width: 100%;
   }
@@ -388,6 +389,7 @@ nav img {
   .hero {
     width: 100%;
     height: 28em;
+    background-color: #ffc017;
   }
 
   .hero img {
@@ -443,16 +445,19 @@ nav img {
   }
 }
 
-@media screen and (min-width: 760px) and (max-width: 1204px) {
+@media screen and (min-width: 760px) and (max-width: 1300px) {
+  nav {
+    padding-right: 2em;
+  }
+
   .hero {
     padding-left: 4em;
     padding-right: 4em;
   }
 
   .hero img {
-    max-width: 60%;
-
     object-fit: contain;
+    scale: 200%;
   }
 
   .hero div {
@@ -497,12 +502,21 @@ nav img {
   }
 
   nav ul {
+    display: flex;
+    gap: 1em;
+  }
+
+  nav ul li:nth-child(-n + 3) {
     display: none;
   }
-  nav ul li:last-child {
+
+  nav ul li:nth-child(4) {
     display: block;
   }
 
+  nav ul li:last-child {
+    display: block;
+  }
   .hero {
     flex-direction: column;
     padding-left: 2em;
@@ -510,6 +524,8 @@ nav img {
     padding-top: 5em;
     min-height: auto;
     height: auto;
+    padding-top: 12em;
+    padding-bottom: 8em;
   }
 
   .hero div {
@@ -519,11 +535,13 @@ nav img {
   }
 
   .hero h3 {
-    font-size: 3rem;
+    font-size: 6rem;
+    margin-top: 0.2em;
+    font-weight: bold;
   }
 
   .hero span {
-    font-size: 1.2em;
+    font-size: 2em;
     margin-bottom: 1em;
   }
 
@@ -531,8 +549,13 @@ nav img {
     display: none;
   }
 
+  .hero button {
+    margin-top: 1em;
+  }
+
   .trendsin2 {
     padding: 1em 2em;
+    margin-bottom: 1em;
   }
 
   .trends {
@@ -566,6 +589,12 @@ nav img {
   .article-image {
     width: 25%;
     height: 5em;
+  }
+
+  .article-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 
   .categories {
