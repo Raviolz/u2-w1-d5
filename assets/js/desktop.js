@@ -2,7 +2,7 @@ const navBar = document.querySelector("nav");
 const navButton = document.querySelector("nav button");
 
 const tresholdDesktop = 400;
-const tresholdTablet = 400; //vabbeh alla fine uguale
+const tresholdTablet = 400; //vabbeh alla fine uguale visto uguale lo lascio come ragionamento in caso
 
 window.addEventListener("scroll", () => {
   const scrollPosition = window.scrollY;

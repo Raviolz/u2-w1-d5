@@ -13,6 +13,7 @@ body {
 
 header {
   background-color: #ffc017;
+  border-bottom: 1px solid;
 }
 
 nav {
@@ -89,7 +90,8 @@ nav img {
 .hero h3 {
   font-family: "Spectral", serif;
   font-size: 7rem;
-  font-weight: bold;
+  font-weight: 600 !important;
+  letter-spacing: -8px;
   margin-bottom: 0.3em;
 }
 
@@ -172,7 +174,7 @@ nav img {
 }
 
 .trends h5 {
-  font-weight: bold;
+  font-weight: bolder;
   line-height: 1.3;
 }
 
@@ -480,7 +482,13 @@ nav img {
   }
 }
 
-@media screen and (min-width: 760px) and (max-width: 1300px) {
+@media screen and (max-width: 800px) {
+  .hero h3 {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1300px) {
   nav {
     padding-right: 2em;
   }
@@ -512,7 +520,6 @@ nav img {
     padding-right: 0;
   }
 
-  /* BOTTOM */
   .bottom {
     flex-direction: column;
     padding: 0;
