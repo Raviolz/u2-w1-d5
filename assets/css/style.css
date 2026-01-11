@@ -173,6 +173,7 @@ nav img {
 
 .trends h5 {
   font-weight: bold;
+  line-height: 1.3;
 }
 
 .trends span {
@@ -223,6 +224,7 @@ nav img {
 
 .news-article-link {
   text-decoration: none;
+  line-height: 2em;
 }
 
 .article-row {
@@ -236,7 +238,7 @@ nav img {
   width: 65%;
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
+  gap: 1em;
   align-items: flex-start;
 }
 
@@ -363,6 +365,20 @@ nav img {
   font-size: 1em;
   color: #757575;
   text-decoration: none;
+}
+
+@media screen and (max-width: 1920px) {
+  .trends {
+    display: grid; /* unico modo per non impazzire spero ok*/
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em 4em;
+    height: auto;
+  }
+
+  .trends article {
+    width: 100%;
+    padding-right: 0;
+  }
 }
 
 @media screen and (max-width: 1500px) {
